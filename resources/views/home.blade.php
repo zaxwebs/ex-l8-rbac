@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Your Permissions</div>
+                <div class="card-header">Your Permissions as a {{ auth()->user()->presentRole() }}</div>
 
                 <div class="card-body">
                     @if (session('status'))

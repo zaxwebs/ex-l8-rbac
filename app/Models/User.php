@@ -59,4 +59,8 @@ class User extends Authenticatable
         $this->role = $role;
         $this->save();
     }
+
+    public function presentRole() {
+        return ucfirst($this->role);
+    }
 }
